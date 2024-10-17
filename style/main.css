@@ -147,7 +147,7 @@ body {
     right: 0;
     width: 55%;
     height: 50%;
-    background-image: url(/image/i-2-color.png);
+    background-image: url(../image/i-2-color.png);
 }
 
 .triangle {
@@ -182,17 +182,17 @@ body {
 }
 
 #pc-image-cont-1 {
-    background-image: url(/image/i-3-color-1.png);
+    background-image: url(../image/i-3-color-1.png);
     background-size: 100% 100%;
 }
 
 #pc-image-cont-2 {
-    background-image: url(/image/i-3-color-2.png);
+    background-image: url(../image/i-3-color-2.png);
     background-size: 100% 100%;
 }
 
 #pc-image-cont-3 {
-    background-image: url(/image/i-3-color-3.png);
+    background-image: url(../image/i-3-color-3.png);
     background-size: 100% 100%;
 }
 
