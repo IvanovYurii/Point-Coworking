@@ -1,0 +1,31 @@
+// Отримуємо обране з localStorage або створюємо новий масив
+const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+// Функція для оновлення відображення обраних послуг
+function updateFavoritesDisplay() {
+    const favoritesList = document.getElementById('favorites');
+    favoritesList.innerHTML = ''; // очищаємо список
+    favorites.forEach(service => {
+        const li = document.createElement('li');
+        li.innerText = service;
+        favoritesList.appendChild(li);
+    });
+}
+
+// Відображаємо обрані послуги при завантаженні сторінки
+updateFavoritesDisplay();
+
+// Додаємо обробники подій для кнопок
+document.querySelectorAll('.add-to-favorites').forEach(button => {
+    button.addEventListener('click', function() {
+        const serviceName = this.parentElement.querySelector('h2').innerText; // отримуємо назву послуги
+        if (!favorites.includes(serviceName)) {
+            favorites.push(serviceName); // додаємо до масиву
+            localStorage.setItem('favorites', JSON.stringify(favorites)); // зберігаємо в localStorage
+            alert(`${serviceName} додано до обраного!`);
+        } else {
+            alert(`${serviceName} вже в обраному!`);
+        }
+        updateFavoritesDisplay(); // оновлюємо відображення
+    });
+});
