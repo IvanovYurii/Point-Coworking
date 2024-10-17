@@ -207,9 +207,15 @@ body {
     line-height: 1.6688rem;
 }
 
-#bl-sq-3,
+#bl-sq-3{
+    padding: 1.7rem;
+    position: relative;
+    width: 40%;
+    display: inline-block;
+}
+
 #bl-sq-4 {
-    /*margin-top: 125px;*/
+    margin-top: 125px;
     padding: 1.7rem;
     position: relative;
     width: 40%;
