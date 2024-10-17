@@ -346,3 +346,12 @@ body {
     background-color: #FFD300;
 }
 
+.add-to-favorites {
+    cursor: pointer; /* Змінює курсор на "вказівник" при наведенні */
+}
+
+/* Додаткові стилі для кнопки (за бажанням) */
+.add-to-favorites:hover {
+    background-color: #f0f0f0; /* Змінює фон при наведенні */
+    transition: background-color 0.3s; /* Додає анімацію при зміні кольору */
+}
