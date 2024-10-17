@@ -355,3 +355,7 @@ body {
     background-color: #f0f0f0; /* Змінює фон при наведенні */
     transition: background-color 0.3s; /* Додає анімацію при зміні кольору */
 }
+
+.price-container {
+    margin-bottom: 100px; /* Додайте відступ внизу, щоб уникнути перекриття */
+}
